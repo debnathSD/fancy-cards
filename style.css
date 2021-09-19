@@ -10,20 +10,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    perspective: 950px;
 }
 
 .container {
-    /* background: lightgoldenrodyellow; */
-    width: 50%;
+    width: 47%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .card {
+    transform-style: preserve-3d;
     min-height: 80vh;
     width: 35rem;
-    /* background: cornflowerblue; */
     box-shadow: 0px 20px 20px rgba(0,0,0,0.2),
                 0px 0px 50px rgba(0,0,0,0.2);
     border-radius: 30px;
@@ -35,12 +35,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: crimson; */
 }
 
 .card-img img {
     width: 16rem;
     z-index: 2;
+    transition: all 0.75s ease-out;
 }
 
 .circle {
@@ -56,14 +56,9 @@ body {
     z-index: 1;
 }
 
-/* rgba(98, 231, 36, 0.897),
-rgba(151, 190, 229, 0.87) */
-
-/* rgba(236, 20, 16, 0.897),
-        rgba(151, 190, 229, 0.87) */
-
 .info h1 {
     font-size: 3rem;
+    transition: all 0.75s ease-out;
 }
 
 .info h3 {
@@ -72,11 +67,13 @@ rgba(151, 190, 229, 0.87) */
     color: #797c7b;
     font-weight: 300;
     hyphens: auto;
+    transition: all 0.75s ease-out;
 }
 
 .attributes {
     display: flex;
     justify-content: space-between;
+    transition: all 0.75s ease-out;
 }
 
 .attributes button {
@@ -102,12 +99,13 @@ button.active {
 .purchase {
     margin-top: 5rem;
     margin-bottom: 2.2rem;
+    transition: all 0.75s ease-out;
 }
 
 .purchase button {
     width: 100%;
     padding: 1rem 0rem;
-    background: rgba(196, 21, 18, 0.753);
+    background: rgba(53, 143, 12, 0.8);
     border: none;
     color: white;
     cursor: pointer;
