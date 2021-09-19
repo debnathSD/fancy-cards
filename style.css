@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    /* background: lightgoldenrodyellow; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    min-height: 80vh;
+    width: 35rem;
+    /* background: cornflowerblue; */
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.2),
+                0px 0px 50px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    padding: 0rem 5rem;
+}
+
+.card-img {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: crimson; */
+}
+
+.card-img img {
+    width: 16rem;
+    z-index: 2;
+}
+
+.circle {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to right,
+        rgba(98, 231, 36, 0.897),
+        rgba(151, 190, 229, 0.87)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* rgba(98, 231, 36, 0.897),
+rgba(151, 190, 229, 0.87) */
+
+/* rgba(236, 20, 16, 0.897),
+        rgba(151, 190, 229, 0.87) */
+
+.info h1 {
+    font-size: 3rem;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    padding: 2rem 0.2rem;
+    color: #797c7b;
+    font-weight: 300;
+    hyphens: auto;
+}
+
+.attributes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.attributes button {
+    display: flex;
+    justify-content: center;
+    width: 2rem;
+    padding: 0.5rem 2rem;
+    margin: 0.5rem 0.5rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #797c7b;
+}
+
+button.active {
+    background: #4d5250;
+    color: white;
+}
+
+.purchase {
+    margin-top: 5rem;
+    margin-bottom: 2.2rem;
+}
+
+.purchase button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: rgba(196, 21, 18, 0.753);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
